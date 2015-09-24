@@ -38,7 +38,7 @@ If you are going to configure your VM as a KMS client, you can use the product k
 
 ### Windows Updates
 
-The scripts in this repo will *not* install Windows updates – by default – during Windows Setup. If you want to change this, go to the relevent section of `Autounattend.xml`:
+The scripts in this repo will *not* install Windows updates – by default – during Windows Setup, because it is so time-consuming. If you want to change this, go to the relevent section of `Autounattend.xml`:
 
 ```xml
 <!-- WITHOUT WINDOWS UPDATES -->
@@ -71,8 +71,6 @@ The scripts in this repo will *not* install Windows updates – by default – d
 -->
 <!-- END WITH WINDOWS UPDATES -->
 ```
-
-Doing so will give you hours back in your day, which is a good thing.
 
 ### OpenSSH / WinRM
 
