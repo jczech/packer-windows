@@ -38,7 +38,7 @@ If you are going to configure your VM as a KMS client, you can use the product k
 
 ### Windows Updates
 
-The scripts in this repo will install all Windows updates – by default – during Windows Setup. This is a _very_ time consuming process, depending on the age of the OS and the quantity of updates released since the last service pack. You might want to do yourself a favor during development and disable this functionality, by commenting out the `WITH WINDOWS UPDATES` section and uncommenting the `WITHOUT WINDOWS UPDATES` section in `Autounattend.xml`:
+The scripts in this repo will *not* install Windows updates – by default – during Windows Setup. If you want to change this, go to the relevent section of `Autounattend.xml`:
 
 ```xml
 <!-- WITHOUT WINDOWS UPDATES -->
